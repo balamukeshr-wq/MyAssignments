@@ -1,5 +1,5 @@
 
-let browswername="Chrome"
+var browswername="Chrome"
 //console.log(browswername)
 function getBrowserName(browswername){
 if(browswername === "Chrome"){
