@@ -1,0 +1,68 @@
+Option:  
+Option: Affiliate Sites
+Option: Automobile
+Option: Car and Driver
+Option: Catalog Generating Marketing Campaigns
+Option: Demo Marketing Campaign
+Option: eCommerce Site Internal Campaign
+Option: Pay Per Click Advertising
+Option: Road and Track
+States:  
+States: 84057
+States: Alabama
+States: Alaska
+States: Arizona
+States: Arkansas
+States: Armed Forces Americas
+States: Armed Forces Europe
+States: Armed Forces Pacific
+States: California
+States: Colorado
+States: Connecticut
+States: Delaware
+States: District of Columbia
+States: Florida
+States: Georgia
+States: Guam
+States: Hawaii
+States: Idaho
+States: Illinois
+States: Indiana
+States: Iowa
+States: Kansas
+States: Kentucky
+States: Louisiana
+States: Maine
+States: Maryland
+States: Massachusetts
+States: Michigan
+States: Minnesota
+States: Mississippi
+States: Missouri
+States: Montana
+States: Nebraska
+States: Nevada
+States: New Hampshire
+States: New Jersey
+States: New Mexico
+States: New York
+States: North Carolina
+States: North Dakota
+States: Ohio
+States: Oklahoma
+States: Oregon
+States: Pennsylvania
+States: Puerto Rico
+States: Rhode Island
+States: South Carolina
+States: South Dakota
+States: Tennessee
+States: Texas
+States: Utah
+States: Vermont
+States: Virgin Islands
+States: Virginia
+States: Washington
+States: West Virginia
+States: Wisconsin
+States: Wyoming

@@ -1,0 +1,870 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Assignment_Day_11.spec.ts >> Account_Creation
+- Location: tests\Assignment_Day_11.spec.ts:43:6
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.selectOption: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//select[@name="industryEnumId"]')
+    - locator resolved to <select onchange="" class="inputBox" name="industryEnumId">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - did not find some options
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - did not find some options
+    - retrying select option action
+      - waiting 100ms
+    41 × waiting for element to be visible and enabled
+       - did not find some options
+     - retrying select option action
+       - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - menubar [ref=f8e9]:
+      - textbox [ref=f8e10]
+      - table [ref=f8e11]:
+        - rowgroup [ref=f8e12]:
+          - row [ref=f8e13]:
+            - menuitem "CRM/SFA" [ref=f8e14]
+            - menuitem [ref=f8e15]:
+              - link "Docs Wiki" [ref=f8e16] [cursor=pointer]:
+                - /url: http://www.opentaps.org/docs/?externalLoginKey=EL98669843941
+            - menuitem [ref=f8e17]:
+              - link "eCommerce" [ref=f8e18] [cursor=pointer]:
+                - /url: /ecommerce/control/main?externalLoginKey=EL98669843941
+    - link [ref=f8e20] [cursor=pointer]:
+      - /url: /opentaps/
+      - img "opentaps CRM" [ref=f8e21]
+  - generic [ref=f8e22]:
+    - generic [ref=f8e23]:
+      - text: democsr2 |
+      - link "Profile" [ref=f8e24] [cursor=pointer]:
+        - /url: /crmsfa/control/myProfile
+      - text: "|"
+      - link "Shortcuts" [ref=f8e25] [cursor=pointer]:
+        - /url: javascript:showKeyboardShortcutsHelp();
+      - text: "|"
+      - link "Logout" [ref=f8e26] [cursor=pointer]:
+        - /url: /crmsfa/control/logout
+    - generic [ref=f8e27]:
+      - table [ref=f8e36]:
+        - rowgroup [ref=f8e37]:
+          - row [ref=f8e38]:
+            - cell [ref=f8e39]:
+              - textbox [ref=f8e43]
+            - cell [ref=f8e44]:
+              - table [ref=f8e48] [cursor=pointer]:
+                - rowgroup [ref=f8e49]:
+                  - row "Search" [ref=f8e50]:
+                    - cell [ref=f8e51]
+                    - cell [ref=f8e53]:
+                      - emphasis [ref=f8e54]:
+                        - button "Search" [ref=f8e55]
+                    - cell [ref=f8e56]
+      - link [ref=f8e58] [cursor=pointer]:
+        - /url: http://www.opentaps.org/docs/index.php?title=Create_Account_Screen&oldid=0
+        - img "Live help for this page on opentaps Wiki" [ref=f8e59]
+      - link [ref=f8e60] [cursor=pointer]:
+        - /url: http://www.opentaps.org/contact
+        - img "Get help from an opentaps Partner" [ref=f8e61]
+  - list:
+    - listitem [ref=f8e63]:
+      - link "My Home" [ref=f8e69] [cursor=pointer]:
+        - /url: /crmsfa/control/myHomeMain
+    - listitem [ref=f8e70]:
+      - link "Leads" [ref=f8e76] [cursor=pointer]:
+        - /url: /crmsfa/control/leadsMain
+    - listitem [ref=f8e77]:
+      - link "Contacts" [ref=f8e83] [cursor=pointer]:
+        - /url: /crmsfa/control/contactsMain
+    - listitem [ref=f8e84]:
+      - link "Accounts" [ref=f8e90] [cursor=pointer]:
+        - /url: /crmsfa/control/accountsMain
+    - listitem [ref=f8e91]:
+      - link "Cases" [ref=f8e97] [cursor=pointer]:
+        - /url: /crmsfa/control/casesMain
+    - listitem [ref=f8e98]:
+      - link "Activities" [ref=f8e104] [cursor=pointer]:
+        - /url: /crmsfa/control/activitiesMain
+    - listitem [ref=f8e105]:
+      - link "Orders" [ref=f8e111] [cursor=pointer]:
+        - /url: /crmsfa/control/ordersMain
+    - listitem [ref=f8e112]:
+      - link "opentaps" [ref=f8e118] [cursor=pointer]:
+        - /url: /opentaps?externalLoginKey=EL530986824810
+  - table [ref=f8e121]:
+    - rowgroup [ref=f8e122]:
+      - row [ref=f8e123]:
+        - 'cell "Last Viewed: Bala Mukesh (ABCD) Ardra Latheesh (TestABC20… Ardra Latheesh (TestABC20… tester testertyu (test) dijo mina (apple) Ishu sukin (Microsoft) john smith (apple)" [ref=f8e124]':
+          - list [ref=f8e125]:
+            - listitem [ref=f8e126]:
+              - generic [ref=f8e127]: "Last Viewed:"
+            - listitem [ref=f8e128]:
+              - link "Bala Mukesh (ABCD)" [ref=f8e129] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10060
+            - listitem [ref=f8e130]:
+              - link "Ardra Latheesh (TestABC20…" [ref=f8e131] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10059
+            - listitem [ref=f8e132]:
+              - link "Ardra Latheesh (TestABC20…" [ref=f8e133] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10058
+            - listitem [ref=f8e134]:
+              - link "tester testertyu (test)" [ref=f8e135] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10057
+            - listitem [ref=f8e136]:
+              - link "dijo mina (apple)" [ref=f8e137] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10048
+            - listitem [ref=f8e138]:
+              - link "Ishu sukin (Microsoft)" [ref=f8e139] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10047
+            - listitem [ref=f8e140]:
+              - link "john smith (apple)" [ref=f8e141] [cursor=pointer]:
+                - /url: /crmsfa/control/viewLead?partyId=10046
+  - generic [ref=f8e143]:
+    - generic [ref=f8e144]:
+      - generic [ref=f8e145]:
+        - generic [ref=f8e146]: Shortcuts
+        - list [ref=f8e152]:
+          - listitem [ref=f8e153]:
+            - link "My Accounts" [ref=f8e154] [cursor=pointer]:
+              - /url: /crmsfa/control/myAccounts
+          - listitem [ref=f8e155]:
+            - link "Create Account" [ref=f8e156] [cursor=pointer]:
+              - /url: /crmsfa/control/createAccountForm
+          - listitem [ref=f8e157]:
+            - link "Find Accounts" [ref=f8e158] [cursor=pointer]:
+              - /url: /crmsfa/control/findAccounts
+          - listitem [ref=f8e159]:
+            - link "Merge Accounts" [ref=f8e160] [cursor=pointer]:
+              - /url: /crmsfa/control/mergeAccountsForm
+      - generic [ref=f8e161]: Create Account
+      - generic [ref=f8e169]: Create Contact
+      - generic [ref=f8e177]: Create Case
+      - generic [ref=f8e185]: Create Lead
+    - generic [ref=f8e193]:
+      - generic [ref=f8e194]: Create Account
+      - table [ref=f8e207]:
+        - rowgroup [ref=f8e208]:
+          - row [ref=f8e209]:
+            - cell "Account Name" [ref=f8e210]
+            - cell [ref=f8e211]:
+              - textbox [active] [ref=f8e212]: Bala
+            - cell "Parent Account" [ref=f8e213]
+            - cell [ref=f8e214]:
+              - textbox [ref=f8e215]
+              - link [ref=f8e216] [cursor=pointer]:
+                - /url: javascript:call_fieldlookup2(document.createAccountForm.parentPartyId,'LookupAccounts');
+                - img "Lookup" [ref=f8e217]
+          - row [ref=f8e218]:
+            - cell "Local Name" [ref=f8e219]
+            - cell [ref=f8e220]:
+              - textbox [ref=f8e221]
+            - cell "Site Name" [ref=f8e222]
+            - cell [ref=f8e223]:
+              - textbox [ref=f8e224]
+          - row [ref=f8e225]:
+            - cell "Annual Revenue" [ref=f8e226]
+            - cell [ref=f8e227]:
+              - textbox [ref=f8e228]
+            - cell "Preferred Currency" [ref=f8e229]
+            - cell "USD - United States Dollar" [ref=f8e230]:
+              - combobox [ref=f8e231]:
+                - option "ADP - Andoran peseta"
+                - option "AED - United Arab Emirates Dirham"
+                - option "AFA - Afghani"
+                - option "ALL - Albanian Lek"
+                - option "AMD - Armenian Dram"
+                - option "ANG - West Indian Guilder"
+                - option "AOK - Angolan Kwanza"
+                - option "ARA - Argentinian Austral"
+                - option "ARS - Argentina Peso"
+                - option "AUD - Australian Dollar"
+                - option "AWG - Aruban Guilder"
+                - option "AZM - Azerbaijan Manat"
+                - option "BAD - Bosnia-Herzogovinian Dinar"
+                - option "BBD - Barbados Dollar"
+                - option "BDT - Bangladesh Taka"
+                - option "BGN - Bulgarian Lev"
+                - option "BHD - Bahrain Dinar"
+                - option "BIF - Burundi Franc"
+                - option "BMD - Bermudan Dollar"
+                - option "BND - Brunei Dollar"
+                - option "BOB - Bolivian Boliviano"
+                - option "BRL - Brazilian Real"
+                - option "BRR - Brazil"
+                - option "BSD - Bahaman Dollar"
+                - option "BWP - Botswana Pula"
+                - option "BYR - Belorussian Ruble"
+                - option "BZD - Belize Dollar"
+                - option "CAD - Canadian Dollar"
+                - option "CDP - Santo Domiongo"
+                - option "CHF - Swiss Franc"
+                - option "CLP - Chilean Peso"
+                - option "CNY - China"
+                - option "COP - Colombian Peso"
+                - option "CRC - Costa Rica Colon"
+                - option "CUP - Cuban Peso"
+                - option "CVE - Cape Verde Escudo"
+                - option "CYP - Cyprus Pound"
+                - option "CZK - Czech Krona"
+                - option "DJF - Djibouti Franc"
+                - option "DKK - Danish Krone"
+                - option "DOP - Dominican Peso"
+                - option "DRP - Dominican Republic Peso"
+                - option "DZD - Algerian Dinar"
+                - option "ECS - Ecuador Sucre"
+                - option "EEK - Estonian Krone"
+                - option "EGP - Egyptian Pound"
+                - option "ETB - Ethiopian Birr"
+                - option "EUR - Euro"
+                - option "FJD - Fiji Dollar"
+                - option "FKP - Falkland Pound"
+                - option "GBP - British Pound"
+                - option "GEK - Georgian Kupon"
+                - option "GHC - Ghanian Cedi"
+                - option "GIP - Gibraltar Pound"
+                - option "GMD - Gambian Dalasi"
+                - option "GNF - Guinea Franc"
+                - option "GTQ - Guatemalan Quedzal"
+                - option "GWP - Guinea Peso"
+                - option "GYD - Guyanese Dollar"
+                - option "HKD - Hong Kong Dollar"
+                - option "HNL - Honduran Lempira"
+                - option "HRD - Croatian Dinar"
+                - option "HTG - Haitian Gourde"
+                - option "HUF - Hungarian forint"
+                - option "IDR - Indeonesian Rupiah"
+                - option "ILS - Israeli Scheckel"
+                - option "INR - Indian Rupee"
+                - option "IQD - Iraqui Dinar"
+                - option "IRR - Iranian Rial"
+                - option "ISK - Iceland Krona"
+                - option "JMD - Jamaican Dollar"
+                - option "JOD - Jordanian Dinar"
+                - option "JPY - Japanese Yen"
+                - option "KES - Kenyan Shilling"
+                - option "KHR - Cambodian Riel"
+                - option "KIS - Kirghizstan Som"
+                - option "KMF - Comoros Franc"
+                - option "KPW - North Korean Won"
+                - option "KRW - South Korean Won"
+                - option "KWD - Kuwaiti Dinar"
+                - option "KYD - Cayman Dollar"
+                - option "KZT - Kazakhstani Tenge"
+                - option "LAK - Laotian Kip"
+                - option "LBP - Lebanese Pound"
+                - option "LKR - Sri Lankan Rupee"
+                - option "LRD - Liberian Dollar"
+                - option "LSL - Lesotho Loti"
+                - option "LTL - Lithuanian Lita"
+                - option "LVL - Latvian Lat"
+                - option "LYD - Libyan Dinar"
+                - option "MAD - Moroccan Dirham"
+                - option "MDL - Moldavian Lei"
+                - option "MGF - Madagascan Franc"
+                - option "MNT - Mongolian Tugrik"
+                - option "MOP - Macao Pataca"
+                - option "MRO - Mauritanian Ouguiya"
+                - option "MTL - Maltese Lira"
+                - option "MUR - Mauritius Rupee"
+                - option "MVR - Maldive Rufiyaa"
+                - option "MWK - Malawi Kwacha"
+                - option "MXN - Mexican Peso (new)"
+                - option "MXP - Mexican Peso (old)"
+                - option "MYR - Malaysian Ringgit"
+                - option "MZM - Mozambique Metical"
+                - option "NGN - Nigerian Naira"
+                - option "NIC - Nicaragua"
+                - option "NIO - Nicaraguan Cordoba"
+                - option "NIS - New Israeli Shekel"
+                - option "NOK - Norwegian Krone"
+                - option "NPR - Nepalese Rupee"
+                - option "NZD - New Zealand Dollar"
+                - option "OMR - Omani Rial"
+                - option "PAB - Panamanian Balboa"
+                - option "PEI - Peruvian Inti"
+                - option "PEN - Peruvian Sol - New"
+                - option "PES - Peruvian Sol"
+                - option "PGK - Papua New Guinea Kina"
+                - option "PHP - Philippino Peso"
+                - option "PKR - Pakistan Rupee"
+                - option "PLN - Polish Zloty"
+                - option "PLZ - Poland"
+                - option "PYG - Paraguayan Guarani"
+                - option "QAR - Qatar Riyal"
+                - option "ROL - Romanian Leu"
+                - option "RUR - Russian Rouble"
+                - option "RWF - Rwanda Franc"
+                - option "SAR - Saudi Riyal"
+                - option "SBD - Solomon Islands Dollar"
+                - option "SCR - Seychelles Rupee"
+                - option "SDP - Sudanese Pound"
+                - option "SEK - Swedish Krona"
+                - option "SGD - Singapore Dollar"
+                - option "SHP - St.Helena Pound"
+                - option "SLL - Leone"
+                - option "SOL - Peru"
+                - option "SOS - Somalian Shilling"
+                - option "SRG - Surinam Guilder"
+                - option "STD - Sao Tome / Principe Dobra"
+                - option "SUR - Russian Ruble (old)"
+                - option "SVC - El Salvador Colon"
+                - option "SYP - Syrian Pound"
+                - option "SZL - Swaziland Lilangeni"
+                - option "THB - Thailand Baht"
+                - option "TJR - Tadzhikistani Ruble"
+                - option "TMM - Turkmenistani Manat"
+                - option "TND - Tunisian Dinar"
+                - option "TOP - Tongan Pa'anga"
+                - option "TPE - Timor Escudo"
+                - option "TRY - Turkish Lira"
+                - option "TTD - Trinidad and Tobago Dollar"
+                - option "TWD - New Taiwan Dollar"
+                - option "TZS - Tanzanian Shilling"
+                - option "UAH - Ukrainian Hryvnia"
+                - option "UGS - Ugandan Shilling"
+                - option "USD - United States Dollar" [selected]
+                - option "UYP - Uruguayan New Peso"
+                - option "UYU - Uruguay"
+                - option "VEB - Venezuelan Bolivar"
+                - option "VND - Vietnamese Dong"
+                - option "VUV - Vanuatu Vatu"
+                - option "WST - Samoan Tala"
+                - option "XAF - Gabon C.f.A Franc"
+                - option "XCD - East Carribean Dollar"
+                - option "XOF - Benin C.f.A. Franc"
+                - option "YER - Yemeni Ryal"
+                - option "ZAR - South African Rand"
+                - option "ZMK - Zambian Kwacha"
+                - option "ZRZ - Zaire"
+                - option "ZWD - Zimbabwean Dollar"
+          - row [ref=f8e232]:
+            - cell "Industry" [ref=f8e233]
+            - cell [ref=f8e234]:
+              - combobox [ref=f8e235]:
+                - option [selected]
+                - option "Aerospace"
+                - option "Computer Hardware"
+                - option "Computer Software"
+                - option "Distribution"
+                - option "Finance"
+                - option "General Services"
+                - option "Health Care"
+                - option "Insurance"
+                - option "Manufacturing"
+                - option "Media"
+                - option "Non-profit"
+                - option "Real Estate"
+                - option "Retail"
+                - option "E-tailer"
+                - option "Telecommunications"
+                - option "Press"
+            - cell "Number Of Employees" [ref=f8e236]
+            - cell [ref=f8e237]:
+              - textbox [ref=f8e238]
+          - row [ref=f8e239]:
+            - cell "Ownership" [ref=f8e240]
+            - cell [ref=f8e241]:
+              - combobox [ref=f8e242]:
+                - option [selected]
+                - option "Sole Proprietorship"
+                - option "Partnership"
+                - option "LLC/LLP"
+                - option "S-Corporation"
+                - option "Corporation"
+                - option "Public Corporation"
+          - row [ref=f8e243]:
+            - cell "SIC Code" [ref=f8e244]
+            - cell [ref=f8e245]:
+              - textbox [ref=f8e246]
+            - cell "Ticker Symbol" [ref=f8e247]
+            - cell [ref=f8e248]:
+              - textbox [ref=f8e249]
+          - row [ref=f8e250]:
+            - cell "Source" [ref=f8e251]
+            - cell [ref=f8e252]:
+              - combobox [ref=f8e253]:
+                - option [selected]
+                - option "Cold Call"
+                - option "Conference"
+                - option "Direct Mail"
+                - option "Employee"
+                - option "Existing Customer"
+                - option "Other"
+                - option "Partner"
+                - option "Public Relations"
+                - option "Self Generated"
+                - option "Tradeshow"
+                - option "Website"
+                - option "Word of Mouth"
+            - cell "Marketing Campaign" [ref=f8e254]
+            - cell [ref=f8e255]:
+              - combobox [ref=f8e256]:
+                - option [selected]
+                - option "Affiliate Sites"
+                - option "Automobile"
+                - option "Car and Driver"
+                - option "Catalog Generating Marketing Campaigns"
+                - option "Demo Marketing Campaign"
+                - option "eCommerce Site Internal Campaign"
+                - option "Pay Per Click Advertising"
+                - option "Road and Track"
+          - row [ref=f8e257]:
+            - cell "Initial Team" [ref=f8e258]
+            - cell [ref=f8e259]:
+              - combobox [ref=f8e260]:
+                - option [selected]
+                - option "Demo Sales Team No. 1"
+                - option "Demo Sales Team No. 2"
+          - row [ref=f8e261]:
+            - cell "Description" [ref=f8e262]
+            - cell [ref=f8e263]:
+              - textbox [ref=f8e264]
+          - row [ref=f8e265]:
+            - cell "Important Note" [ref=f8e266]
+            - cell [ref=f8e267]:
+              - textbox [ref=f8e268]
+          - row [ref=f8e269]:
+            - cell "Contact Information" [ref=f8e270]
+          - row [ref=f8e271]:
+            - cell "Country Code" [ref=f8e272]
+            - cell [ref=f8e273]:
+              - textbox [ref=f8e274]: "1"
+          - row [ref=f8e275]:
+            - cell "Area Code" [ref=f8e276]
+            - cell [ref=f8e277]:
+              - textbox [ref=f8e278]
+            - cell "Phone Number" [ref=f8e279]
+            - cell [ref=f8e280]:
+              - textbox [ref=f8e281]
+          - row [ref=f8e282]:
+            - cell "Extension" [ref=f8e283]
+            - cell [ref=f8e284]:
+              - textbox [ref=f8e285]
+            - cell "Person to Ask For" [ref=f8e286]
+            - cell [ref=f8e287]:
+              - textbox [ref=f8e288]
+          - row [ref=f8e289]:
+            - cell "E-Mail Address" [ref=f8e290]
+            - cell [ref=f8e291]:
+              - textbox [ref=f8e292]
+            - cell "Web Url" [ref=f8e293]
+            - cell [ref=f8e294]:
+              - textbox [ref=f8e295]
+          - row [ref=f8e296]:
+            - cell "Primary Address" [ref=f8e297]
+          - row [ref=f8e298]:
+            - cell "To Name" [ref=f8e299]
+            - cell [ref=f8e300]:
+              - textbox [ref=f8e301]
+            - cell "Attention Name" [ref=f8e302]
+            - cell [ref=f8e303]:
+              - textbox [ref=f8e304]
+          - row [ref=f8e305]:
+            - cell "Address Line 1" [ref=f8e306]
+            - cell [ref=f8e307]:
+              - textbox [ref=f8e308]
+            - cell "Address Line 2" [ref=f8e309]
+            - cell [ref=f8e310]:
+              - textbox [ref=f8e311]
+          - row [ref=f8e312]:
+            - cell "City" [ref=f8e313]
+            - cell [ref=f8e314]:
+              - textbox [ref=f8e315]
+            - cell "Country" [ref=f8e316]
+            - cell "United States" [ref=f8e317]:
+              - combobox [ref=f8e318]:
+                - option
+                - option "Afghanistan"
+                - option "Albania"
+                - option "Algeria"
+                - option "American Samoa"
+                - option "Andorra"
+                - option "Angola"
+                - option "Anguilla"
+                - option "Antarctica"
+                - option "Antigua And Barbuda"
+                - option "Argentina"
+                - option "Armenia"
+                - option "Aruba"
+                - option "Australia"
+                - option "Austria"
+                - option "Azerbaijan"
+                - option "Bahamas"
+                - option "Bahrain"
+                - option "Bangladesh"
+                - option "Barbados"
+                - option "Belarus"
+                - option "Belgium"
+                - option "Belize"
+                - option "Benin"
+                - option "Bermuda"
+                - option "Bhutan"
+                - option "Bolivia"
+                - option "Bosnia And Herzegowina"
+                - option "Botswana"
+                - option "Bouvet Island"
+                - option "Brazil"
+                - option "British Indian Ocean Territory"
+                - option "Brunei Darussalam"
+                - option "Bulgaria"
+                - option "Burkina Faso"
+                - option "Burundi"
+                - option "Cambodia"
+                - option "Cameroon"
+                - option "Canada"
+                - option "Cape Verde"
+                - option "Cayman Islands"
+                - option "Central African Republic"
+                - option "Chad"
+                - option "Chile"
+                - option "China"
+                - option "Christmas Island"
+                - option "Cocos (keeling) Islands"
+                - option "Colombia"
+                - option "Comoros"
+                - option "Congo"
+                - option "Congo, The Democratic Republic Of The"
+                - option "Cook Islands"
+                - option "Costa Rica"
+                - option "Cote D'ivoire"
+                - 'option "Croatia (local Name: Hrvatska)"'
+                - option "Cuba"
+                - option "Cyprus"
+                - option "Czech Republic"
+                - option "Denmark"
+                - option "Djibouti"
+                - option "Dominica"
+                - option "Dominican Republic"
+                - option "East Timor"
+                - option "Ecuador"
+                - option "Egypt"
+                - option "El Salvador"
+                - option "England"
+                - option "Equatorial Guinea"
+                - option "Eritrea"
+                - option "Estonia"
+                - option "Ethiopia"
+                - option "Falkland Islands (malvinas)"
+                - option "Faroe Islands"
+                - option "Fiji"
+                - option "Finland"
+                - option "France"
+                - option "France, Metropolitan"
+                - option "French Guiana"
+                - option "French Polynesia"
+                - option "French Southern Territories"
+                - option "Gabon"
+                - option "Gambia"
+                - option "Georgia"
+                - option "Germany"
+                - option "Ghana"
+                - option "Gibraltar"
+                - option "Greece"
+                - option "Greenland"
+                - option "Grenada"
+                - option "Guadeloupe"
+                - option "Guam"
+                - option "Guatemala"
+                - option "Guinea"
+                - option "Guinea-bissau"
+                - option "Guyana"
+                - option "Haiti"
+                - option "Heard And Mc Donald Islands"
+                - option "Holy See (vatican City State)"
+                - option "Honduras"
+                - option "Hong Kong"
+                - option "Hungary"
+                - option "Iceland"
+                - option "India"
+                - option "Indonesia"
+                - option "Iran (islamic Republic Of)"
+                - option "Iraq"
+                - option "Ireland"
+                - option "Israel"
+                - option "Italy"
+                - option "Jamaica"
+                - option "Japan"
+                - option "Jordan"
+                - option "Kazakhstan"
+                - option "Kenya"
+                - option "Kiribati"
+                - option "Korea, Democratic People's Republic Of"
+                - option "Korea, Republic Of"
+                - option "Kuwait"
+                - option "Kyrgyzstan"
+                - option "Lao People's Democratic Republic"
+                - option "Latvia"
+                - option "Lebanon"
+                - option "Lesotho"
+                - option "Liberia"
+                - option "Libyan Arab Jamahiriya"
+                - option "Liechtenstein"
+                - option "Lithuania"
+                - option "Luxembourg"
+                - option "Macau"
+                - option "Macedonia, The Former Yugoslav Republic Of"
+                - option "Madagascar"
+                - option "Malawi"
+                - option "Malaysia"
+                - option "Maldives"
+                - option "Mali"
+                - option "Malta"
+                - option "Marshall Islands"
+                - option "Martinique"
+                - option "Mauritania"
+                - option "Mauritius"
+                - option "Mayotte"
+                - option "Mexico"
+                - option "Micronesia, Federated States Of"
+                - option "Moldova, Republic Of"
+                - option "Monaco"
+                - option "Mongolia"
+                - option "Montenegro"
+                - option "Montserrat"
+                - option "Morocco"
+                - option "Mozambique"
+                - option "Myanmar"
+                - option "N.Ireland"
+                - option "Namibia"
+                - option "Nauru"
+                - option "Nepal"
+                - option "Netherlands"
+                - option "Netherlands Antilles"
+                - option "New Caledonia"
+                - option "New Zealand"
+                - option "Nicaragua"
+                - option "Niger"
+                - option "Nigeria"
+                - option "Niue"
+                - option "Norfolk Island"
+                - option "Northern Mariana Islands"
+                - option "Norway"
+                - option "Oman"
+                - option "Pakistan"
+                - option "Palau"
+                - option "Palestinian Territory, Occupied"
+                - option "Panama"
+                - option "Papua New Guinea"
+                - option "Paraguay"
+                - option "Peru"
+                - option "Philippines"
+                - option "Pitcairn"
+                - option "Poland"
+                - option "Portugal"
+                - option "Puerto Rico"
+                - option "Qatar"
+                - option "Reunion"
+                - option "Romania"
+                - option "Russian Federation"
+                - option "Rwanda"
+                - option "Saint Kitts And Nevis"
+                - option "Saint Lucia"
+                - option "Saint Vincent And The Grenadines"
+                - option "Samoa"
+                - option "San Marino"
+                - option "Sao Tome And Principe"
+                - option "Saudi Arabia"
+                - option "Scotland"
+                - option "Senegal"
+                - option "Serbia"
+                - option "Seychelles"
+                - option "Sierra Leone"
+                - option "Singapore"
+                - option "Slovakia (slovak Republic)"
+                - option "Slovenia"
+                - option "Solomon Islands"
+                - option "Somalia"
+                - option "South Africa"
+                - option "South Georgia And The South Sandwich Islands"
+                - option "Spain"
+                - option "Sri Lanka"
+                - option "St. Helena"
+                - option "St. Pierre And Miquelon"
+                - option "Sudan"
+                - option "Suriname"
+                - option "Svalbard And Jan Mayen Islands"
+                - option "Swaziland"
+                - option "Sweden"
+                - option "Switzerland"
+                - option "Syrian Arab Republic"
+                - option "Taiwan, Province Of China"
+                - option "Tajikistan"
+                - option "Tanzania, United Republic Of"
+                - option "Thailand"
+                - option "Togo"
+                - option "Tokelau"
+                - option "Tonga"
+                - option "Trinidad And Tobago"
+                - option "Tunisia"
+                - option "Turkey"
+                - option "Turkmenistan"
+                - option "Turks And Caicos Islands"
+                - option "Tuvalu"
+                - option "Uganda"
+                - option "Ukraine"
+                - option "United Arab Emirates"
+                - option "United Kingdom"
+                - option "United States" [selected]
+                - option "United States Minor Outlying Islands"
+                - option "Uruguay"
+                - option "Uzbekistan"
+                - option "Vanuatu"
+                - option "Venezuela"
+                - option "Viet Nam"
+                - option "Virgin Islands (british)"
+                - option "Virgin Islands (u.s.)"
+                - option "Wales"
+                - option "Wallis And Futuna Islands"
+                - option "Western Sahara"
+                - option "Yemen"
+                - option "Yugoslavia"
+                - option "Zambia"
+                - option "Zimbabwe"
+          - row [ref=f8e319]:
+            - cell "Zip/Postal Code" [ref=f8e320]
+            - cell [ref=f8e321]:
+              - textbox [ref=f8e322]
+            - cell "State/Province" [ref=f8e323]
+            - cell [ref=f8e324]:
+              - combobox [ref=f8e325]:
+                - option [selected]
+                - option "84057"
+                - option "Alabama"
+                - option "Alaska"
+                - option "Arizona"
+                - option "Arkansas"
+                - option "Armed Forces Americas"
+                - option "Armed Forces Europe"
+                - option "Armed Forces Pacific"
+                - option "California"
+                - option "Colorado"
+                - option "Connecticut"
+                - option "Delaware"
+                - option "District of Columbia"
+                - option "Florida"
+                - option "Georgia"
+                - option "Guam"
+                - option "Hawaii"
+                - option "Idaho"
+                - option "Illinois"
+                - option "Indiana"
+                - option "Iowa"
+                - option "Kansas"
+                - option "Kentucky"
+                - option "Louisiana"
+                - option "Maine"
+                - option "Maryland"
+                - option "Massachusetts"
+                - option "Michigan"
+                - option "Minnesota"
+                - option "Mississippi"
+                - option "Missouri"
+                - option "Montana"
+                - option "Nebraska"
+                - option "Nevada"
+                - option "New Hampshire"
+                - option "New Jersey"
+                - option "New Mexico"
+                - option "New York"
+                - option "North Carolina"
+                - option "North Dakota"
+                - option "Ohio"
+                - option "Oklahoma"
+                - option "Oregon"
+                - option "Pennsylvania"
+                - option "Puerto Rico"
+                - option "Rhode Island"
+                - option "South Carolina"
+                - option "South Dakota"
+                - option "Tennessee"
+                - option "Texas"
+                - option "Utah"
+                - option "Vermont"
+                - option "Virgin Islands"
+                - option "Virginia"
+                - option "Washington"
+                - option "West Virginia"
+                - option "Wisconsin"
+                - option "Wyoming"
+          - row [ref=f8e326]:
+            - cell "Zip/Postal Code Extension" [ref=f8e327]
+            - cell [ref=f8e328]:
+              - textbox [ref=f8e329]
+          - row [ref=f8e330]:
+            - cell [ref=f8e331]
+            - cell [ref=f8e332]:
+              - button "Create Account" [ref=f8e333] [cursor=pointer]
+      - generic [ref=f8e334]:
+        - generic [ref=f8e335]:
+          - link "Opentaps Open Source ERP + CRM" [ref=f8e336] [cursor=pointer]:
+            - /url: http://www.opentaps.org
+          - text: 1.5.0. opentaps is a trademark of
+          - link "Open Source Strategies, Inc." [ref=f8e337] [cursor=pointer]:
+            - /url: http://www.opentaps.org
+        - generic [ref=f8e338]:
+          - text: This application is free software under the terms of the
+          - link "Affero General Public License v3" [ref=f8e339] [cursor=pointer]:
+            - /url: http://www.opentaps.org/about-opentaps/licensing
+          - text: WITH ABSOLUTELY NO WARRANTY. It is also available under
+          - link "commercial licenses" [ref=f8e340] [cursor=pointer]:
+            - /url: http://www.opentaps.org/services-support/professional-edition
+          - text: from Open Source Strategies, Inc.
+        - generic [ref=f8e341]:
+          - text: (c)
+          - link "Open Source Strategies, Inc." [ref=f8e342] [cursor=pointer]:
+            - /url: http://www.opentaps.org
+        - generic [ref=f8e343]:
+          - text: To learn more about opentaps, follow us on
+          - link [ref=f8e344] [cursor=pointer]:
+            - /url: http://www.facebook.com/pages/opentaps/285070770315
+            - img "Facebook" [ref=f8e345]
+          - text: And
+          - link [ref=f8e346] [cursor=pointer]:
+            - /url: http://twitter.com/opentaps
+            - img "twitter" [ref=f8e347]
+  - iframe
+  - iframe
+```
+
+# Test source
+
+```ts
+  1  | import { Accounts_page } from "./Account_basepage";
+  2  | 
+  3  | export class CreateAccountsPage extends Accounts_page {
+  4  |     async fillAccountdetails(){
+  5  |         await this.page.locator(`//input[@id="accountName"]`).fill('Bala');
+  6  | 
+> 7  |         await this.page.locator(`//select[@name="industryEnumId"]`).selectOption({value:"IND_SOTWARE"})
+     |                                                                     ^ Error: locator.selectOption: Test timeout of 30000ms exceeded.
+  8  |         
+  9  |         const indusdropdown= await this.page.locator(`//select[@name="industryEnumId"]/option`).allInnerTexts();
+  10 |         for (const optionText of indusdropdown){
+  11 |             console.log('Industry Option',optionText)
+  12 |         }
+  13 | 
+  14 |     }
+  15 | }
+```

@@ -1,0 +1,45 @@
+Option:  
+Option: Affiliate Sites
+Option: Automobile
+Option: Car and Driver
+Option: Catalog Generating Marketing Campaigns
+Option: Demo Marketing Campaign
+Option: eCommerce Site Internal Campaign
+Option: Pay Per Click Advertising
+Option: Road and Track
+States: 
+States: ANDAMAN AND NICOBAR
+States: ANDHRA PRADESH
+States: ARUNACHAL PRADESH
+States: ASSAM
+States: BIHAR
+States: CHANDIGARH
+States: CHHATTISGARH
+States: DADRA AND NAGER HAVELI
+States: DAMAN AND DIU
+States: GOA
+States: GUJARAT
+States: HARYANA
+States: HIMACHAL PRADESH
+States: JAMMU AND KASHMIR
+States: JHARKHAND
+States: KARNATAKA
+States: KERALA
+States: LAKSHADWEEP
+States: MADHYA PRADESH
+States: MAHARASHTRA
+States: MANIPUR
+States: MEGHALAYA
+States: MIZORAM
+States: NAGALAND
+States: NEW DELHI
+States: ORISSA
+States: PONDICHERRY
+States: PUNJAB
+States: RAJASTHAN
+States: SIKKIM
+States: TAMILNADU
+States: TRIPURA
+States: UTTAR PRADESH
+States: UTTARANCHAL
+States: WEST BENGAL
